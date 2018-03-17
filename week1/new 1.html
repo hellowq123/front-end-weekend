@@ -65,16 +65,91 @@
 		</table>
 		<hr>
 		
-		<!-- 带边框表格-->
-		<table border="1">
+		<!-- 带边框/单元格间距/单元格内边距/表头表格-->
+		<table border="1" cellspacing="0" cellpadding="10">
+		    <tr>
+			    <th>编码</th>
+			    <th>姓名</th>
+				
+			</tr>
 		    <tr>
 			    <td>1</td>
 				<td>2</td>
 			</tr>
 			<tr>
-			    <td>3</td>
-				<td>4</td>
+			    <td>张三</td>
+				<td>李四</td>
 			</tr>
 		</table>
+		<hr>
+		
+		<!-- 跨列表格-->
+		<table border="1" cellspacing="0" cellpadding="10">
+		    <tr>
+			    <th colspan="2">1</th>				
+			</tr>
+		    <tr>
+			    <td>1</td>
+				<td>2</td>
+			</tr>
+			
+			<tr>
+			    <td>张三</td>
+				<td>李四</td>
+			</tr>
+		</table>
+		<hr>
+		
+		<!-- 跨行表格-->
+		<table border="1" cellspacing="0" cellpadding="10">
+		    
+		    <tr>
+			    <td rowspan="2">1</td>
+				<td>张三</td>
+			</tr>
+			
+			<tr>
+                <td>李四</td>				
+			</tr>			    
+		</table>
+		<hr>
+		
+		<!-- 列控制-->
+		<table border="1" cellspacing="0" cellpadding="10">
+		    <colgroup>
+			    <col span="1" style="background-color:red"/>
+				<col style="background-color:yellow"//>
+			</colgroup>
+		    <tr>
+			    <th>编码</th>
+			    <th>姓名</th>
+				
+			</tr>
+		    <tr>
+			    <td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+			    <td>张三</td>
+				<td>李四</td>
+			</tr>		    
+		</table>
+		<hr>
+		
+		<dl>
+            <dt>语言</dt><dd>中文</dd>
+            <dt>简介</dt><dd>无</dd>      
+        </dl>
+        
+        <ul>
+            <li>qweer
+                <ol>
+                    <li>okjljoj</li>
+                    <li>llomo</li>
+                </ol>
+            </li>
+            <li>efddcdf</li>
+            <ol></ol>
+        </ul>
 	</body>
 </html>
