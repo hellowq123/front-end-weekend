@@ -20,6 +20,96 @@
             .nav a {
                 color:#222;
             }
+            
+            img.logo {
+                display:block;
+                width:540px;
+                margin-left:auto;
+                margin-right:auto;
+                clear:right;
+                
+            }
+            
+            .search {
+                text-align:center;
+            }
+            
+            .search-word {
+                width:500px;
+                height:30px;
+            }
+            
+            .search-button {
+                width:100px;
+                height:36px;
+                margin-left:-6px;
+                vertical-align:bottom;  
+                
+                background-color:#3385ff;
+                color:#fff;
+                border:0;
+            }
+            
+            .search-button:hover {
+                background-color: #317ef3;
+            }
+            
+            .search-camera {
+                display:inline-block;
+                width:20px;
+                height:20px;
+                background-image: url("images/baidu.camera.png");
+                background-repeat:no-repeat;
+                
+                
+                position:absolute;
+                margin-left:-30px;
+                margin-top:10px;
+                
+            }
+            
+            .search-camera:hover {
+                background-position: 0 -20px;
+            }
+            
+            
+            .footer {
+                margin-top:200px;
+                text-align:center;
+                font-size:13px;
+            }
+            
+            .footer .qrcode {
+                display:block;
+                width:60px;
+                margin-left:auto;
+                margin-right:auto;
+                
+            }
+            
+            
+            .footer-nav {
+                list-style:none;     
+                margin-left:-30px;
+            }
+ 
+            .footer-nav li {
+                display:inline-block; 
+            }
+            
+            .footer a:link, .footer a:visited {
+                color:#222;     
+            }
+            
+            .footer a:hover, .footer a:active {   
+                color:blue;
+            }
+            
+            .footer img {
+                margin-right:-10px;
+                vertical-align:bottom;  
+
+            }
         </style>
     </head>
     <body>
@@ -36,15 +126,16 @@
         </ul>
         <img class="logo" src="images/baidu.logo.gif" alt="logo">
         
-        <div>
+        <div class="search">
             <input class="search-word" type="text" name="keyword">
+            <span class="search-camera"></span>
             <input class="search-button" type="button" value="百度一下">
         </div>
         
         <div class="footer">
-            <img src="images/baidu.qrcode.png" alt="二维码" >
+            <img class="qrcode" src="images/baidu.qrcode.png" alt="二维码" >
             <p class="site-name">百度</p>
-            <ul>
+            <ul class="footer-nav">
                 <li><a href="#">把百度设为首页</a></li>
                 <li><a href="#">关于百度</a></li>
                 <li><a href="#">About baidu</a></li>
