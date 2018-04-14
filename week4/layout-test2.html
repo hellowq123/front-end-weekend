@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .layout-test2 {
+            position: relative;
+            background-color: slategray;
+            width: 200px;
+            height: 200px;
+        }
+
+        .layout-test2 .out {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        .layout-test2 .in {
+            background-color: sienna;
+            width: 100px;
+            height: 100px;
+            margin-left: -50%;
+            margin-top: -50%;
+
+        }
+    </style>
+    
+    <body>
+        <hr>
+        <div class="layout-test2">
+            <div class="out">
+                <div class="in">asdfasdasfd</div>
+            </div>
+        </div>
+        <hr>
+    </body>
+</html>
