@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .layout-test4 {
+            background: sandybrown;
+            height: 100%;
+        }
+
+        .layout-test4 .main {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .layout-test4 .main .in {
+            margin: 0 210px 0 310px;
+            height: 100%;
+            min-width: 300px;
+            background-color: sienna;
+        }
+
+        .layout-test4 .left,
+        .layout-test4 .right {
+            
+            height: 100%;
+            float: left;
+        }
+
+        .layout-test4 .left {
+            background-color: lightblue;
+            width: 300px;
+            margin-left: -100%;
+        }
+
+        .layout-test4 .right {
+            background-color: lightgreen;
+            width: 200px;
+            margin-left: -200px;
+        }
+    </style>
+    
+    <body>
+        <hr>
+        <div class="layout-test4">
+        <div class="main">
+            <div class="in"></div>
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+        <hr>
+    </body>
+</html>
+
+
+        
