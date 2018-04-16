@@ -5,11 +5,12 @@
         <title>百度一下，你就知道</title>
         <style>
             .nav {
+                padding:0;
+                margin:0;
                 float:right;
                 list-style:none;
                 font-size:13px;
-                font-weight:bold;
-                            
+                font-weight:bold;                            
             }
             
             .nav li {
@@ -17,8 +18,11 @@
                 margin-left:10px;
             }
             
-            .nav a {
+            .nav a:link,  .nav a:visited {
                 color:#222;
+            }
+            .nav a:hover,  .nav a:cative {            
+                color:blue;
             }
             
             img.logo {
@@ -26,8 +30,7 @@
                 width:540px;
                 margin-left:auto;
                 margin-right:auto;
-                clear:right;
-                
+                clear:right;                
             }
             
             .search {
@@ -85,8 +88,7 @@
                 margin-left:auto;
                 margin-right:auto;
                 
-            }
-            
+            }            
             
             .footer-nav {
                 list-style:none;     
@@ -106,9 +108,10 @@
             }
             
             .footer img {
+                          
+                display:inline-block;
                 margin-right:-10px;
-                vertical-align:bottom;  
-
+                vertical-align:bottom;   
             }
         </style>
     </head>
@@ -124,6 +127,7 @@
             <li><a href="//passport.baidu.com">登录</a></li>
             <li><a href="/settings.html">设置</a></li>
         </ul>
+        
         <img class="logo" src="images/baidu.logo.gif" alt="logo">
         
         <div class="search">
