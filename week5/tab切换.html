@@ -1,0 +1,193 @@
+<!DCOTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>tab切换</title>
+        <style>
+            
+            body {
+                background:#ecf0f1;
+                color:#666;
+            }
+            
+            .tab-container {
+                width:600px;
+                height:720px;
+                background:#fff;
+                margin-left:auto;
+                margin-right:auto;
+                box-shadow:1px 1px 2px rgba(0,0,0,.15);
+            }
+            
+            .tab-bar {
+                background:#1abc9c;
+                margin:0;
+                padding:0;
+                
+            }
+            
+            .tab-bar li {
+                list-style:none;
+                display:inline-block;
+                width:120px;
+                height:50px;
+                text-align:center;
+                line-height:51px;
+            }
+            
+            .tab-bar li a {
+                display:block;
+                text-decoration:none;
+                color:#fff;
+            }
+            
+            .tab-bar li a.active {
+                color:#1abc9c;
+                background:#fff;
+            }
+            
+            .tab-content {
+                padding:25px 50px;
+            }
+            
+            .tab-content h1 {
+                text-align:center;
+                padding:20px;
+            }
+            
+            
+            .tab-content h4 {
+                text-align:center;
+                padding-bottom:10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <section class="tab-container">
+                <ul class="tab-bar">
+                    <li><a href="#content1" id="bar1">后来</a></li>
+                    <li><a href="#content2" id="bar2">我们都</a></li>
+                    <li><a href="#content3" id="bar3">学会了</a></li>
+                    <li><a href="#content4" id="bar4">如何去爱</a></li>
+                </ul>
+            <div class="tab-content">
+                <div id="content1">
+                    <h1> 刘若英:后来</h1>
+                    <h4> 词:施人诚 曲:玉城干春 编曲:王继康</h4>
+                    <p> 后来,</p>
+                    <p> 我总算学会了如何去爱。</p>
+                    <p> 可惜你早已远去,</p>
+                    <p> 消失在人海。</p>
+                    <p> 后来,</p>
+                    <p> 终于在眼泪中明白,</p>
+                    <p> 有些人一旦错过就不再。</p>
+                </div>
+                <div id="content2">
+                     <p>槴子花,白花瓣,</p>
+                     <p>落在我蓝色百褶裙上。</p>
+                     <p>“爱你!”你轻声说。</p>
+                     <p>我低下头闻见一阵芬芳。</p>
+                     <p>那个永恒的夜晚,</p>
+                     <p>十七岁仲夏,</p>
+                     <p>你吻我的那个夜晚,</p>
+                     <p>让我往后的时光,</p>
+                     <p>每当有感叹,</p>
+                     <p>总想起当天的星光。</p>
+                     <p>那时候的爱情,</p>
+                     <p>为什么就能那样简单。</p>
+                     <p>而又是为什么人年少时,</p>
+                     <p>一定要让深爱的人受伤。</p>
+                     <p>在这相似的深夜里,</p>
+                     <p>你是否一样,</p>
+                     <p>也在静静追悔感伤。</p>
+                </div> 
+                <div id="content3">
+                     <p>如果当时我们能不那么倔强,</p>
+                     <p>现在也不那么遗憾。</p>
+                     <p>你都如何回忆我,</p>
+                     <p>带著笑或是很沉默。</p>
+                     <p>这些年来有没有人能让你不寂寞。</p>
+                     <p>后来,</p>
+                     <p>我总算学会了如何去爱。</p>
+                     <p>可惜你早已远去,</p>
+                     <p>消失在人海。</p>
+                     <p>后来,</p>
+                     <p>终于在眼泪中明白,</p>
+                     <p>有些人一旦错过就不再。</p>
+                     <p>你都如何回忆我,</p>
+                     <p>带著笑或是很沉默。</p>
+                     <p>这些年来有没有人能让你不寂寞。</p>
+                </div> 
+                <div id="content4">
+                     <p>后来,</p>
+                     <p>我总算学会了如何去爱。</p>
+                     <p>可惜你早已远去,</p>
+                     <p>消失在人海。</p>
+                     <p>后来,</p>
+                     <p>终于在眼泪中明白,</p>
+                     <p>有些人一旦错过就不再。</p>
+                     <p>后来,</p>
+                     <p>我总算学会了如何去爱。</p>
+                     <p>可惜你早已远去,</p>
+                     <p>消失在人海。</p>
+                     <p>后来,</p>
+                     <p>终于在眼泪中明白,</p>
+                     <p>有些人一旦错过就不再。</p>
+                     <p>永远不会再重来,</p>
+                     <p>有一个男孩爱著那个女孩。</p>
+                </div>
+            </div>
+        </section>
+        
+        <script type="text/javascript">
+            var bar1 = document.getElementById("bar1");
+            var bar2 = document.getElementById("bar2");
+            var bar3 = document.getElementById("bar3");
+            var bar4 = document.getElementById("bar4");
+            var content1 = document.getElementById("content1");
+            var content2 = document.getElementById("content2");
+            var content3 = document.getElementById("content3");
+            var content4 = document.getElementById("content4");
+            
+            content2.style.display = "none";
+            content3.style.display = "none";
+            content4.style.display = "none";
+            
+            bar1.className = "active";  //将bar1初始状态设置为被单击效果
+            
+            //将所有内容设置为隐藏，并清除所有链接的类样式
+            function hideAll(){           
+                content1.style.display = "none";
+                content2.style.display = "none";
+                content3.style.display = "none";
+                content4.style.display = "none";
+                bar1.className = "";
+                bar2.className = "";
+                bar3.className = "";
+                bar4.className = "";
+            }
+               
+            bar1.onclick = function(){
+                hideAll();
+                content1.style.display = "block";
+                bar1.className = "active";
+            }
+            bar2.onclick = function(){
+                hideAll();
+                content2.style.display = "block";
+                bar2.className = "active";
+            }
+            bar3.onclick = function(){
+                hideAll();
+                content3.style.display = "block";
+                bar3.className = "active";
+            }
+            bar4.onclick = function(){
+                hideAll();
+                content4.style.display = "block";
+                bar4.className = "active";
+            }
+        </script>
+    </body>
+</html>

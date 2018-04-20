@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8">
+        <title>menu</title>
+        <style>
+            body {
+                height:100%;
+                background:lightblue;
+            }            
+            
+            .menu{
+                margin:0;
+                padding:0;
+                height:65px;
+                background-color:#27AE60;
+                width:90%;               
+                margin:0 auto;                
+            }
+                        
+            .menu li {
+                list-style:none;
+                float:left;                  
+                border-right:1px solid rgba(255,255,255,.3);
+                position:relative;
+                display:block;
+            }            
+            
+            .menu li a {
+                font-size:21px;
+                padding:35px;
+                line-height:65px;
+                text-decoration:none;
+            }
+            
+            .menu li a:link,
+            .menu li a:visited {                 
+                color: #fff;                
+            }
+            
+            .menu li a:hover,
+            .menu li a:active {
+                color:#222;
+            }
+            
+            .menu li ul {
+                display:none;
+                background:#2ECC71;
+                position:absolute;
+                top:65px;                
+            }
+            
+            .menu li:hover ul {
+                display:block;
+                margin:0;
+                padding:0;
+            }
+            
+            .menu li:hover {
+                background:rgb(0,0,0,.2);                
+            } 
+            
+            .menu li ul li {
+                width:100%;
+                border-right:0;
+                border-top:1px solid rgba(255,255,255,.3);
+                
+            }
+            
+            .menu li ul li a {
+                padding-right:0;
+                
+                font-size:14px;
+                line-height:50px;
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+        <div class="header">
+            <ul class="menu">
+                <li><a href="#">主页</a></li>
+                <li><a href="#">新闻</a>
+                    <ul>
+                        <li><a href="#">热点</a></li>
+                        <li><a href="#">国内</a></li>
+                        <li><a href="#">国际</a></li>                
+                    </ul>
+                </li>
+                <li><a href="#">军事</a>
+                    <ul>
+                        <li><a href="#">中国军情</a></li>
+                        <li><a href="#">国际军情</a></li>
+                        <li><a href="#">军事图片</a></li>                
+                    </ul>
+                </li>
+                <li><a href="#">娱乐</a>
+                    <ul>
+                        <li><a href="#">明星</a></li>
+                        <li><a href="#">电影</a></li>
+                        <li><a href="#">电视</a></li>
+                        <li><a href="#">综艺</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">财经</a>
+                    <ul>
+                        <li><a href="#">股票</a></li>
+                        <li><a href="#">理财</a></li>
+                        <li><a href="#">数据</a></li>
+                        <li><a href="#">经济民生</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">体育</a>
+                    <ul>
+                        <li><a href="#">NBA</a></li>
+                        <li><a href="#">国际足球</a></li>
+                        <li><a href="#">国内足球</a></li>
+                        <li><a href="#">CBA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+    </body>
+</html>
